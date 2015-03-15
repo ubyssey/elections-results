@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ELECTIONS - Up next</title>
+</head>
+<body>
+    {{ message }}
+    <h1>Select next upcoming race:</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form }}<br/><br/>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

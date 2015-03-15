@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ELECTIONS - Call race</title>
+</head>
+<body>
+    {{ message }}
+    <h1>Call a race:</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form }}<br/><br/>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
